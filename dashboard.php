@@ -10,22 +10,23 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #e0f7e9;
+            background-color: #1a1a2e;
             font-family: Arial, sans-serif;
+            color: #eaeaea;
         }
 
         .form-container {
-            background-color: #fff;
+            background-color: #16213e;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-            width: 350px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            width: 400px;
             text-align: center;
         }
 
         .form-container h1,
         .form-container h2 {
-            color: #2f855a;
+            color: #0f3460;
             margin-bottom: 20px;
         }
 
@@ -36,7 +37,7 @@
         }
 
         .form-container label {
-            color: #2f855a;
+            color: #eaeaea;
             font-weight: bold;
             margin-bottom: 5px;
             align-self: flex-start;
@@ -47,12 +48,14 @@
             margin-bottom: 15px;
             padding: 10px;
             border-radius: 5px;
-            border: 1px solid #2f855a;
+            border: 1px solid #0f3460;
             width: 100%;
+            background-color: #1a1a2e;
+            color: #eaeaea;
         }
 
         .form-container input[type="submit"] {
-            background-color: #2f855a;
+            background-color: #0f3460;
             color: white;
             border: none;
             cursor: pointer;
@@ -60,7 +63,7 @@
         }
 
         .form-container input[type="submit"]:hover {
-            background-color: #276749;
+            background-color: #0e2957;
         }
 
         table {
@@ -70,7 +73,7 @@
         }
 
         table tr {
-            border-bottom: 1px solid #2f855a;
+            border-bottom: 1px solid #0f3460;
         }
 
         table tr:last-child {
@@ -79,13 +82,13 @@
 
         table td {
             padding: 10px;
-            color: #2f855a;
+            color: #eaeaea;
             text-align: left;
         }
 
         table td button,
         table td input[type="submit"] {
-            background-color: #2f855a;
+            background-color: #0f3460;
             color: white;
             border: none;
             padding: 5px 10px;
@@ -96,7 +99,7 @@
 
         table td button:hover,
         table td input[type="submit"]:hover {
-            background-color: #276749;
+            background-color: #0e2957;
         }
 
         #formEdit {
@@ -106,7 +109,7 @@
 
         #logout {
             margin-top: 20px;
-            color: #2f855a;
+            color: #0f3460;
             text-decoration: none;
             font-weight: bold;
         }
@@ -116,7 +119,7 @@
         }
 
         .no-tasks {
-            color: #2f855a;
+            color: #0f3460;
             font-style: italic;
         }
     </style>
@@ -218,7 +221,7 @@
                 <form id="formEdit" action="" method="post">
                     <h2>Atualizar Tarefa</h2>
                     <label for="idEdit">ID:</label>
-                    <input type="text" id="idEdit" name="idEdit">
+                    <input type="text" id="idEdit" name="idEdit" readonly>
                     <label for="nomeEdit">Nome:</label>
                     <input type="text" id="nomeEdit" name="nomeEdit">
                     <label for="descricaoEdit">Descrição:</label>
