@@ -50,16 +50,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #1a1a2e;
             font-family: Arial, sans-serif;
+            color: #eaeaea;
         }
 
         .form-container {
-            background-color: #fff;
+            background-color: #16213e;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        .form-container h1 {
+            color: #0f3460;
+            margin-bottom: 20px;
         }
 
         .form-container form {
@@ -70,45 +77,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .form-container label {
             margin-bottom: 5px;
             font-weight: bold;
-            color: #333;
+            color: #eaeaea;
+            align-self: flex-start;
         }
 
         .form-container input {
             margin-bottom: 15px;
             padding: 10px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #0f3460;
             font-size: 16px;
+            background-color: #1a1a2e;
+            color: #eaeaea;
         }
 
         .form-container input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #0f3460;
             color: white;
             cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
         }
 
         .form-container input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #0e2957;
         }
 
         .form-container a {
-            color: #333;
+            color: #0f3460;
             text-decoration: none;
         }
 
         .form-container a:hover {
-            color: #4CAF50;
+            color: #eaeaea;
         }
 
         .form-container p {
             color: red;
         }
     </style>
-
 </head>
 
 <body>
     <div class="form-container">
+        <h1>Login</h1>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username" required>
